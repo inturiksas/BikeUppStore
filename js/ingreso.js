@@ -79,12 +79,14 @@ $(document).ready(function(){
             '</div>'
         );*/
         $(InputsWrapper).append(
-            '<div class="col-xs-12 col-md-8">'+
+            '<div>'+
+            
             '<input type="text" class="form-control col-md-6 cajas" name="field_cod_'+ FieldCount +'" id="field_cod_'+ FieldCount +'" placeholder="Código pieza"/>'+
             '<input type="text" class="form-control col-md-6 cajas" name="field_nom_'+ FieldCount +'" id="field_nom_'+ FieldCount +'" placeholder="Nombre pieza"/>'+
             '<input type="text" class="form-control col-md-6 cajas" name="field_pre_'+ FieldCount +'" id="field_pre_'+ FieldCount +'" placeholder="Precio pieza"/>'+
             //'<button class="removeclass">-</button>'+
             '<input type="image" class="removeclass" src="img/menos.png">'+
+            
             '</div>'
         );
     }

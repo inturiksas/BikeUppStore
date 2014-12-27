@@ -50,8 +50,8 @@ font-size: 26px;
     background-attachment: fixed;
 }
 h1{
-	color: #fff;
-text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	color: rgb(0,0,0);
+	
 }
 .recibo_uno{
 	background: rgba(253, 253, 253, 0.5);
