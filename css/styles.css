@@ -1,0 +1,71 @@
+*{margin:0 auto;}
+
+.numero_pedido{
+	background: #C2B9B9;
+	line-height: 39px;
+}
+
+
+#Numero_serial{
+	color: red;
+}
+.todo{
+	max-width: 1024px;
+margin: 0 auto;
+padding: 0px;
+}
+
+.cajas{
+width: 150px!important;
+	height: 32px;
+
+}
+.cabezainfo{
+	background: #C2B9B9;
+	
+	margin-bottom: 50px;
+	border: 1px solid #ccc;
+border-radius: 5px;
+background: #eee;
+line-height: 60px;
+box-shadow: 0px 4px 11px 1px;
+
+}
+.marg{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 60px;
+
+}
+.fuentetit{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
+font-size: 26px;
+
+
+}
+
+#fondo{
+	background-image: url('../img/bicycle-widescreen_wallpapers.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+	color: #fff;
+text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.recibo_uno{
+	background: rgba(253, 253, 253, 0.5);
+	box-shadow: 0px 8px 27px 6px;
+}
+.recibo_dos{
+	background: rgba(253, 253, 253, 0.5);
+	box-shadow: 0px 8px 27px 6px;
+}
+.recibo_tres{
+	background: rgba(253, 253, 253, 0.5);
+	box-shadow: 0px 8px 27px 6px;
+}
+.recibo_cuatro{
+	background: rgba(253, 253, 253, 0.5);
+	box-shadow: 0px 8px 27px 6px;
+}
