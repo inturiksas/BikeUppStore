@@ -1,14 +1,10 @@
-@font-face{
-	font-family: 'letra-topa';
-	src: URL('../fonts/NationalCartoon.ttf');
-}
-@font-face{
-	font-family: 'letra2';
-	src: URL('../fonts/UnderYourBed.ttf');
-}
-
 *{margin:0 auto;}
 
+body{
+	background-image: url('../img/bicycle-widescreen_wallpapers.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .numero_pedido{
 	background: #C2B9B9;
 	line-height: 39px;
@@ -46,16 +42,12 @@ box-shadow: 0px 4px 11px 1px;
 	margin-left: 60px;
 
 }
-.topa{
-	font-family: "letra2",Helvetica,Arial,sans-serif!important;
-	font-size: 35px;
-}
-
 .fuentetit{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
-	font-size: 26px;
-}
+font-size: 26px;
 
+
+}
 
 #fondo{
 	background-image: url('../img/bicycle-widescreen_wallpapers.jpg');
@@ -63,8 +55,8 @@ box-shadow: 0px 4px 11px 1px;
     background-attachment: fixed;
 }
 h1{
-	color: rgb(0,0,0);
-	
+	color: #fff;
+text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 .recibo_uno{
 	background: rgba(253, 253, 253, 0.5);
@@ -81,4 +73,16 @@ h1{
 .recibo_cuatro{
 	background: rgba(253, 253, 253, 0.5);
 	box-shadow: 0px 8px 27px 6px;
+}
+
+.dialogomodal{
+	width: 80%;
+}
+.marres{
+	margin-left: 5.5%;
+
+}
+.menmen{
+	margin-bottom: 0px;
+	
 }
