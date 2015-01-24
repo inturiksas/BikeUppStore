@@ -138,13 +138,18 @@
   <div class="cabezainfo text-center row">
     <p class="col-md-12 fuentetit">Informacion:</p>
   </div>
-       <div class="col-md-6 recibo_unoizquierda">
-    
+       <div class="col-md-6  recibo_unoizquierda">
+   
     <div class="col-md-12">
         <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas ">Documento:</span>
        <input type="text" class="form-control col-md-6 cajas " id="cajas_ingreso_1" placeholder="Doc identidad" required>
     </div>
+    <div class="input-group marg row">
+     <button type="button" class="btn btn-primary desapa  col-md-12 col-xs-12 col-sm-12" data-toggle="modal" data-target="#modalverificacion" >
+  Consultar
+</button>
+</div>
     <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">Nombre:</span>
       <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre completo" required>
@@ -173,7 +178,7 @@
 
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modalverificacion" >
+<button type="button" class="btn btn-primary desapa1 " data-toggle="modal" data-target="#modalverificacion" >
   Consultar
 </button>
 
@@ -207,7 +212,9 @@
      </p>
     </div>
  <div class="col-md-12">
+
   <div class="input-group  marg row">
+
       <span class="input-group-addon col-md-6 cajas" >Direccion:</span>
       <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_3" placeholder="Dir" required>
     </div>
@@ -262,7 +269,12 @@
   </div>
 
  <div class="col-md-6 recibo_unoizquierda">
-  
+  <div class="marg row desapa">
+      <div class="col-md-12">
+     <button class="btn btn-default col-md-12 text-center btn-primary" type="button" id="cotizar">Cotizar</button> 
+      </div>
+         
+     </div> 
   <h1>Suspension delantera:</h1>
     
     <div class="col-md-12">
@@ -343,7 +355,7 @@
     
 
          
-     <div class="marg row">
+     <div class="marg row ">
       <div class="col-md-12">
      <button class="btn btn-default col-md-12 text-center btn-primary" type="button" id="cotizar">Cotizar</button> 
       </div>

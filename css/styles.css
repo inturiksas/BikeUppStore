@@ -97,3 +97,15 @@ text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
         width: 213px!important
     }
 }
+@media screen and (max-width: 720px) {
+    .desapa1 {display: none!important;
+    }
+}
+@media screen and (min-width: 720px) {
+    .desapa {display: none!important;
+    
+}
+
+
+
+
