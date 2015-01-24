@@ -62,10 +62,14 @@ $(document).ready(function(){
     });
 
     $("body").on("click",".removeclass", function(e){ //user click on remove text
-        if( x > 1 ) {
+        if( x >= 2 ) {
             $(this).parent('div').remove(); //remove text box
             x--; //decrement textbox
+            if (){
+
+            };
         }
+       
         return false;
     });
 
@@ -90,9 +94,10 @@ $(document).ready(function(){
             '<span class="input-group-addon col-md-4 cajas">Precio:</span>'+'<input type="text" class="form-control col-md-6 cajas" name="field_pre_'+ FieldCount +'" id="field_pre_'+ FieldCount +'" placeholder="Precio pieza"/>'+
             '</div>'+
             //'<button class="removeclass">-</button>'+
-            '<input type="image" class="removeclass" src="img/menos.png">'+
+            
+            
              '</div>'
-        );
+                     );
     }
 
     /* Para la gestión de Adición y retiro de Partes */
