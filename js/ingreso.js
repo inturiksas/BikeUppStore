@@ -79,15 +79,19 @@ $(document).ready(function(){
             '</div>'
         );*/
         $(InputsWrapper).append(
-            '<div>'+
-            
-            '<input type="text" class="form-control col-md-6 cajas" name="field_cod_'+ FieldCount +'" id="field_cod_'+ FieldCount +'" placeholder="Código pieza"/>'+
-            '<input type="text" class="form-control col-md-6 cajas" name="field_nom_'+ FieldCount +'" id="field_nom_'+ FieldCount +'" placeholder="Nombre pieza"/>'+
-            '<input type="text" class="form-control col-md-6 cajas" name="field_pre_'+ FieldCount +'" id="field_pre_'+ FieldCount +'" placeholder="Precio pieza"/>'+
+              '<div class="col-md-12">'+
+            '<div class="input-group  row">'+
+            '<span class="input-group-addon col-md-4 cajas ">Codigo:</span>'+'<input type="text" class="form-control col-md-6 cajas" name="field_cod_'+ FieldCount +'" id="field_cod_'+ FieldCount +'" placeholder="Código pieza"/>'+
+           '</div>'+
+           '<div class="input-group  row">'+
+            '<span class="input-group-addon col-md-4 cajas">Parte:</span>'+'<input type="text" class="form-control col-md-6 cajas" name="field_nom_'+ FieldCount +'" id="field_nom_'+ FieldCount +'" placeholder="Nombre pieza"/>'+
+            '</div>'+
+            '<div class="input-group  row">'+
+            '<span class="input-group-addon col-md-4 cajas">Precio:</span>'+'<input type="text" class="form-control col-md-6 cajas" name="field_pre_'+ FieldCount +'" id="field_pre_'+ FieldCount +'" placeholder="Precio pieza"/>'+
+            '</div>'+
             //'<button class="removeclass">-</button>'+
             '<input type="image" class="removeclass" src="img/menos.png">'+
-            
-            '</div>'
+             '</div>'
         );
     }
 

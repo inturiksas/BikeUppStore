@@ -44,6 +44,7 @@ box-shadow: 0px 4px 11px 1px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-left: 60px;
+	
 
 }
 .fuentetit{
@@ -89,4 +90,10 @@ text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 .menmen{
 	margin-bottom: 0px;
 	
+}
+
+@media screen and (max-width: 700px) {
+    .cajas {
+        width: 213px!important
+    }
 }

@@ -24,6 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+     <script src="js/ingreso.js"></script>
       <link href="css/animate.css" rel="stylesheet">
   </head>
   <body >
@@ -327,20 +328,17 @@
   <div class="cabezainfo text-center row">
     <p class="col-md-12 fuentetit">Cambio de partes:</p>
   </div>
+  <div class="col-xs-12 col-md-12" id="InputsWrapper">
+                    <!-- contenedor para adicionar partes -->
+            </div> 
        <div class="col-md-6 recibo_unoizquierda">
        
     
     <div class="col-md-12">
-        <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas ">Codigo:</span>
-       <input type="text" class="form-control col-md-6 cajas " id="cajas_ingreso_1" placeholder="#" >
-       
-    </div>
-    <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas">Parte:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre" >
-     
-    </div>   
+        
+    
+       <input type="image" id="AddMoreFileBox" src="img/mas.png">     
+         
      <div class="marg row">
       <div class="col-md-12">
      <button class="btn btn-default col-md-12 btn-primary" type="button" id="cotizar">Cotizar</button> 
@@ -355,12 +353,13 @@
  
    
    <div class="col-md-6 recibo_unoizquierda">
-   <div class="input-group marg ">
-      <span class="input-group-addon cajas ">Precio:</span>
-      <input type="number" class="form-control  cajas" id="suma"
-      name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required" placeholder="$" >
-      <span class="input-group-addon ">$</span>
+      <div class=" marg row"> 
+              
+      <span class=" col-md-3 ">Autorizado:</span>     
+     <input type="checkbox" class="col-md-1">
+  
     </div> 
+   
     <div class="input-group marg ">
       <span class="input-group-addon  cajas" id="sumatoria">Sumatoria:</span>
       <input type="number" class="form-control cajas" id="cajas_ingreso_2" 
@@ -368,12 +367,7 @@
       <span class="input-group-addon ">$</span>
     </div> 
    
-      <div class=" marg row"> 
-              
-      <span class=" col-md-3 ">Autorizado:</span>     
-     <input type="checkbox" class="col-md-1">
-  
-    </div> 
+    
 
      
 
