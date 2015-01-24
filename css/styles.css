@@ -92,17 +92,30 @@ text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 	
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
     .cajas {
         width: 213px!important
     }
+       .marg1{
+	margin-top: none;
+margin-bottom: none;
+margin-left: none;
+
+
+}
 }
 @media screen and (max-width: 720px) {
     .desapa1 {display: none!important;
     }
 }
 @media screen and (min-width: 720px) {
-    .desapa {display: none!important;
+    .marg1{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 60px;
+
+
+}
     
 }
 

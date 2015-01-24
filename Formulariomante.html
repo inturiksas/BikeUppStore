@@ -138,7 +138,7 @@
   <div class="cabezainfo text-center row">
     <p class="col-md-12 fuentetit">Informacion:</p>
   </div>
-       <div class="col-md-6  recibo_unoizquierda">
+      <!-- <div class="col-md-6  recibo_unoizquierda">
    
     <div class="col-md-12">
         <div class="input-group marg row">
@@ -158,14 +158,7 @@
       <span class="input-group-addon col-md-6 cajas">Peso :</span>
       <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_2"  name="test" length="3" onKeyPress="return(currencyFormat(this,',','.',event))" placeholder="Kg" required>
     </div>
-    <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas">Articulo:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre" required>
-    </div>
-    <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas">Referencia:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Ref" required>
-    </div>
+   
 
     </div>  
     
@@ -177,12 +170,10 @@
        
 
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary desapa1 " data-toggle="modal" data-target="#modalverificacion" >
-  Consultar
-</button>
+ Button trigger modal
 
-<!-- Modal -->
+
+<!-- Modal 
 <div class="modal fade" id="modalverificacion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -211,32 +202,64 @@
 
      </p>
     </div>
- <div class="col-md-12">
 
-  <div class="input-group  marg row">
 
-      <span class="input-group-addon col-md-6 cajas" >Direccion:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_3" placeholder="Dir" required>
+ </div>-->
+
+  <div class="col-md-12">
+    <div class="input-group   row">
+      <div class="col-md-6 recibo_unoderecha"> 
+        <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas" >Nombre:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Color" required>
+    <button type="button" class="btn btn-primary  " data-toggle="modal" data-target="#modalverificacion" >
+  Consultar
+</button>
+      </div>
+      <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas" >Documento:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="D.I" required>
     </div>
-     <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas" >Telefono:</span>
-      <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Fijo o celular" required>
+     </div>
+<div class="col-md-6 recibo_unoderecha"> 
+      <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Peso:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre" required>
     </div>
     <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas" >E-mail:</span>
-      <input type="email" name="email" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="user@" required>
+      <span class="input-group-addon col-md-6 cajas">Email:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Ref" required>
     </div>
-    <div class="input-group marg row">
+    </div>
+      </div>   
+ 
+      
+    </div>
+  <div class="col-md-12">
+    <div class="input-group   row">
+      <div class="col-md-6 recibo_unoderecha"> 
+        <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas" >Color:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Color" required>
+    
+      </div>
+      <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas" >Marca:</span>
       <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Marca" required>
     </div>
-    <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas" >Color:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Color" required>
+     </div>
+<div class="col-md-6 recibo_unoderecha"> 
+      <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Articulo:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre" required>
     </div>
-
- </div>
- </div>
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Referencia:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Ref" required>
+    </div>
+    </div>
+      </div>   
+ 
       
     </div>
 
@@ -245,7 +268,7 @@
   <div class="cabezainfo text-center row">
     <p class="col-md-12 fuentetit">Mantenimiento:</p>
   </div>
-       <div class="col-md-6 recibo_unoizquierda">
+       <div class="col-md-6 text-center recibo_unoizquierda">
         <h1>General:</h1>
     
     <div class="col-md-12">
@@ -269,7 +292,7 @@
     
   </div>
 
- <div class="col-md-6 recibo_unoizquierda">
+ <div class="col-md-6 text-center recibo_unoizquierda">
 
   <h1>Suspension delantera:</h1>
     
@@ -295,7 +318,7 @@
 
     
   </div>
-   <div class="col-md-6 recibo_unoizquierda">
+   <div class="col-md-6 text-center recibo_unoizquierda">
   <h1>Suspension trasera:</h1>
     
     <div class="col-md-12">
@@ -322,7 +345,7 @@
     </div>  
     
   </div>
-   <div class="marg col-md-6 recibo_unoizquierda">
+   <div class="marg col-md-6 text-center recibo_unoizquierda">
   <h1>Bujes:</h1>
        
       <input type="number" class="form-control col-md-6 cajas"
@@ -343,7 +366,7 @@
                     <!-- contenedor para adicionar partes -->
 
             </div> 
-       <div class="col-md-6 recibo_unoizquierda">
+       <div class="col-md-6 text-center recibo_unoizquierda">
        
     
     <div class="col-md-12">
@@ -351,7 +374,7 @@
     
 
          
-     <div class="marg row ">
+     <div class="marg1 row ">
       <div class="col-md-12">
      <button class="btn btn-default col-md-12 text-center btn-primary" type="button" id="cotizar">Cotizar</button> 
       </div>
@@ -364,8 +387,8 @@
 
  
    
-   <div class="col-md-6 recibo_unoizquierda">
-      <div class=" marg row"> 
+   <div class="col-md-6 text-center recibo_unoizquierda">
+      <div class=" marg1 row"> 
               
       <span class=" col-md-3 ">Autorizado:</span>     
      <input type="checkbox" class="col-md-1">
@@ -390,7 +413,7 @@
   <div class="cabezainfo text-center row">
     <p class="col-md-12 fuentetit">Valor total:</p>
   </div>
-       <div class="col-md-6 recibo_unoizquierda">
+       <div class="col-md-6 text-center recibo_unoizquierda">
         <button class="btn btn-default col-md-12" type="button" id="Cerrarr">Cerrar</button> 
     
     <div class="col-md-12">
