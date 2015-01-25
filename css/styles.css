@@ -45,6 +45,10 @@ line-height: 60px;
 box-shadow: 0px 4px 11px 1px;
 
 }
+.modal-dialog{
+	margin: 0px;
+
+}
 .marg{
 	margin-top: 10px;
 	margin-bottom: 10px;
