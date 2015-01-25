@@ -1,0 +1,1 @@
+parte_model.js
