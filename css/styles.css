@@ -1,9 +1,10 @@
 *{margin:0 auto;}
 
 body{
-	background-image: url('../img/bicycle-widescreen_wallpapers.jpg');
+	background-image: url('../img/back.jpg');
 	background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100%;
 }
 .row{
 	margin-right: 0px;
@@ -63,10 +64,14 @@ font-size: 26px;
 
 }
 
-#fondo{
-	background-image: url('../img/bicycle-widescreen_wallpapers.jpg');
+.fondo{
+	background-image: url('../img/back2.png');
 	background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100%
+}
+.scrollfondo{
+	margin-bottom: 20px;
 }
 h1{
 	color: #fff;
