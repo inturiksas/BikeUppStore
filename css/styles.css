@@ -5,6 +5,7 @@ body{
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+    background-position-y: 64%!important;
 }
 .row{
 	margin-right: 0px;
@@ -68,7 +69,8 @@ font-size: 26px;
 	background-image: url('../img/back2.png');
 	background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%
+    background-size: 100%;
+    background-position-y: 64%!important;
 }
 .scrollfondo{
 	margin-bottom: 20px;
