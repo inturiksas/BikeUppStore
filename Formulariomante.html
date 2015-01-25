@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bike upp store</title>
+    <title>#BikeUppStore</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
    
     <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
@@ -101,7 +101,7 @@
 <div class="recibo_uno row ">
   <div class="col-md-6 text-center recibo_unoizquierda">
     <div class=" row">
-      <p class="col-md-8 fuentetit">Pedido de trabajo :</p>
+      <p class="col-md-8 fuentetit">Número de Mantenimiento :</p>
       <p class="col-md-4 fuentetit" id="Numero_serial">1900</p>
     </div>
     <div class="col-md-12">
@@ -124,7 +124,7 @@
  <div class="col-md-12">
   <div class="input-group  marg row">
       <span class="input-group-addon col-md-6 cajas" >Recibido por:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_3" placeholder="Nombre completo" required>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_3" placeholder="" required>
     </div>
      <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas" >valor MO:</span>
@@ -212,24 +212,24 @@
       <div class="col-md-6 recibo_unoderecha"> 
         <div class="input-group marg row">
       <span class="input-group-addon col-md-4 cajanombre" >Documento:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="D.I:" required>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Documento" required>
     <button type="button" class="btn btn-primary  col-md-3  bot  " data-toggle="modal" data-target="#modalverificacion:" >
   Consultar
 </button>
       </div>
       <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas" >Nombre:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Nombre:" required>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Nombre" required>
     </div>
      </div>
 <div class="col-md-6 recibo_unoderecha"> 
       <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">Peso:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Kg:" required>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Kg" required>
     </div>
     <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas">Email:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="E-mail:" required>
+      <span class="input-group-addon col-md-6 cajas">E-mail:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="E-mail" required>
     </div>
     </div>
       </div>   
@@ -310,7 +310,7 @@ input.value = input.value.replace(/[^\d\.]*/g,'');
 
  <div class="col-md-6 text-center recibo_unoizquierda">
 
-  <h1>Suspension delantera:</h1>
+  <h1>Suspensión delantera:</h1>
     
     <div class="col-md-12">
         <div class="input-group marg row">
@@ -338,7 +338,7 @@ input.value = input.value.replace(/[^\d\.]*/g,'');
     
   </div>
    <div class="col-md-6 text-center recibo_unoizquierda">
-  <h1>Suspension trasera:</h1>
+  <h1>Suspensión trasera:</h1>
     
     <div class="col-md-12">
         <div class="input-group marg row">
@@ -488,28 +488,28 @@ $("button.remove").on("click", remove);
     <div class="col-md-12">
         <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas ">Total mano de obra:</span>
-       <input type="text" class="form-control col-md-6 cajas " id="cajas_ingreso_1" placeholder="#" >
+       <input type="text" class="form-control col-md-6 cajas " id="cajas_ingreso_1" placeholder="$" >
        
     </div>
     <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas">T. pates de cambio:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre" >
+      <span class="input-group-addon col-md-6 cajas">T. partes de cambio:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="$" >
      
     </div> 
     <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">Total mantenimiento:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre" >
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="$" >
      
     </div> 
     <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">Total :</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre" >
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="$" >
      
     </div>   
      <div class="marg row">
       <div class="col-md-12">
      <button class="btn btn-default col-md-6 btn-success" type="button" id="Guardar">Guardar</button> 
-      <button class="btn btn-default col-md-6 btn-danger" type="button" id="Cancelar">Cancelar</button> 
+      <button class="btn btn-default col-md-6 btn-danger" type="button" id="Cancelar">Volver</button> 
       </div>
          
      </div> 
