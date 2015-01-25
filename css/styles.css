@@ -29,10 +29,15 @@ width: 150px!important;
 	height: 32px;
 
 }
+.cajanombre{
+
+	height: 32px;
+
+}
 .cabezainfo{
 	background: #C2B9B9;
 	
-	margin-bottom: 50px;
+
 	border: 1px solid #ccc;
 /*border-radius: 5px;*/
 background: #eee;
@@ -66,6 +71,8 @@ text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 .recibo_uno{
 	background: rgba(253, 253, 253, 0.5);
 	box-shadow: 0px 8px 27px 6px;
+	padding-bottom: 50px;
+
 }
 .recibo_dos{
 	background: rgba(253, 253, 253, 0.5);
@@ -74,14 +81,18 @@ text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 .recibo_tres{
 	background: rgba(253, 253, 253, 0.5);
 	box-shadow: 0px 8px 27px 6px;
+	padding-bottom: 50px;
 }
 .recibo_cuatro{
 	background: rgba(253, 253, 253, 0.5);
 	box-shadow: 0px 8px 27px 6px;
+	padding-bottom: 50px;
 }
-
+.bot{
+	padding-left: 8px;
+}
 .dialogomodal{
-	width: 80%;
+	width: 100%;
 }
 .marres{
 	margin-left: 5.5%;
@@ -90,6 +101,12 @@ text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 .menmen{
 	margin-bottom: 0px;
 	
+}
+.recibo_unoizquierda{
+	padding-top: 50px;
+}
+.recibo_unoderecha{
+	padding-top: 50px;
 }
 
 @media screen and (max-width: 720px) {

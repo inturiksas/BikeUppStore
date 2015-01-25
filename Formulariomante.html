@@ -97,9 +97,9 @@
     </nav>
 
 <div class="recibo_uno row ">
-  <div class="col-md-6 recibo_unoizquierda">
+  <div class="col-md-6 text-center recibo_unoizquierda">
     <div class=" row">
-      <p class="col-md-8 fuentetit">Pedido de trabajo numero:</p>
+      <p class="col-md-8 fuentetit">Pedido de trabajo :</p>
       <p class="col-md-4 fuentetit" id="Numero_serial">1900</p>
     </div>
     <div class="col-md-12">
@@ -115,10 +115,9 @@
     </div>  
     
   </div>
- <div class="col-md-6 recibo_unoderecha">
-  <div class="row">
-      <div class="col-md-10"></div>
-      <p class="col-md-2" id="Numero_serial"></p>
+ <div class="col-md-6 text-center recibo_unoderecha">
+  <div class="row">     <div class="col-md-3"></div>
+      <p class="col-md-2 fuentetit" id="Numero_serial">Estado:<p id="Estado"></p></p>
     </div>
  <div class="col-md-12">
   <div class="input-group  marg row">
@@ -210,25 +209,25 @@
     <div class="input-group   row">
       <div class="col-md-6 recibo_unoderecha"> 
         <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas" >Nombre:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Color" required>
-    <button type="button" class="btn btn-primary  " data-toggle="modal" data-target="#modalverificacion" >
+      <span class="input-group-addon col-md-4 cajanombre" >Nombre:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Nombre:" required>
+    <button type="button" class="btn btn-primary  col-md-3 col-xs-8 bot  " data-toggle="modal" data-target="#modalverificacion:" >
   Consultar
 </button>
       </div>
       <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas" >Documento:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="D.I" required>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="D.I:" required>
     </div>
      </div>
 <div class="col-md-6 recibo_unoderecha"> 
       <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">Peso:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre" required>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Kg:" required>
     </div>
     <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">Email:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Ref" required>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="E-mail:" required>
     </div>
     </div>
       </div>   
@@ -237,7 +236,7 @@
     </div>
   <div class="col-md-12">
     <div class="input-group   row">
-      <div class="col-md-6 recibo_unoderecha"> 
+      <div class="col-md-6 "> 
         <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas" >Color:</span>
       <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Color" required>
@@ -248,7 +247,7 @@
       <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Marca" required>
     </div>
      </div>
-<div class="col-md-6 recibo_unoderecha"> 
+<div class="col-md-6 "> 
       <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">Articulo:</span>
       <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre" required>
@@ -352,14 +351,15 @@
     </div>  
     
   </div>
-   <div class="marg col-md-6 text-center recibo_unoizquierda">
+   <div class="col-md-6 text-center recibo_unoizquierda">
   <h1>Bujes:</h1>
-       
-      <input type="number" class="form-control col-md-6 cajas" id="bujes"
-      name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required" id="cajas_ingreso_2" placeholder="$" >
-      
-      
-
+  <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Precio:</span>
+      <span class="input-group-addon ">$</span>
+      <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_2" 
+      name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required" placeholder="$" >
+     
+    </div>
     </div>  
     
   </div>
