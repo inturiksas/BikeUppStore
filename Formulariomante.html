@@ -85,7 +85,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand " href="Splash.html">#BikeStore</a>
+          <a class="navbar-brand " href="Splash.html">#BikeUpStore</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -128,7 +128,7 @@
     </div>
      <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas" >valor MO:</span>
-      <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_4"  name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" placeholder="$" required>
+      <input type="number" onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_4"  name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" placeholder="$" required>
     </div>
 
  </div>
@@ -157,7 +157,7 @@
     </div>
     <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">Peso :</span>
-      <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_2"  name="test" length="3" onKeyPress="return(currencyFormat(this,',','.',event))" placeholder="Kg" required>
+      <input type="number" onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_2"  name="test" length="3" onKeyPress="return(currencyFormat(this,',','.',event))" placeholder="Kg" required>
     </div>
    
 
@@ -276,19 +276,33 @@
         <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas ">Preventivo:</span>
       <span class="input-group-addon ">$</span>
-       <input type="number" class="form-control col-md-6 cajas " name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" placeholder="$" required="required" >
+       <input type="number" onkeyup="format(this)" onchange="format(this)"  class="form-control col-md-6 cajas " name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" placeholder="$" required="required" >
        
 
     </div>
     <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">General:</span>
       <span class="input-group-addon ">$</span>
-      <input type="number" class="form-control col-md-6 cajas"  name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="cajas_ingreso_2" placeholder="$" >
+      <input type="number" onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas"  name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="cajas_ingreso_2" placeholder="$" >
       
     </div>
     
     
+<script type="text/javascript">
 
+function format(input)
+{
+var num = input.value.replace(/\./g,'');
+if(!isNaN(num)){
+num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g,'$1.');
+num = num.split('').reverse().join('').replace(/^[\.]/,'');
+input.value = num;
+}
+ 
+else{ alert('Solo se permiten numeros');
+input.value = input.value.replace(/[^\d\.]*/g,'');
+}
+}</script>
 
     </div>  
     
@@ -302,19 +316,19 @@
         <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas ">General:</span>
       <span class="input-group-addon ">$</span>
-       <input type="number" class="form-control col-md-6 cajas " id="cajas_ingreso_1" name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required"placeholder="$" >
+       <input type="number" onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas " id="cajas_ingreso_1" name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required"placeholder="$" >
       
     </div>
     <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">Puesta a punto:</span>
       <span class="input-group-addon ">$</span>
-      <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_2" name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required" placeholder="$" >
+      <input type="number" onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_2" name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required" placeholder="$" >
       
     </div>
     <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">Correctivo:</span>
       <span class="input-group-addon ">$</span>
-      <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_2" name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required" placeholder="$" >
+      <input type="number" onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_2" name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required" placeholder="$" >
    
     </div>
     
@@ -330,21 +344,21 @@
         <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas ">General:</span>
       <span class="input-group-addon ">$</span>
-       <input type="number" class="form-control col-md-6 cajas " id="cajas_ingreso_1" 
+       <input type="number" onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas " id="cajas_ingreso_1" 
        name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required"placeholder="$" >
       
     </div>
     <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">Puesta a punto:</span>
       <span class="input-group-addon ">$</span>
-      <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_2" 
+      <input type="number" onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_2" 
       name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required" placeholder="$" >
       
     </div>
     <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">Correctivo:</span>
       <span class="input-group-addon ">$</span>
-      <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_2" 
+      <input type="number" onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_2" 
       name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required" placeholder="$" >
      
     </div>
@@ -358,7 +372,7 @@
   <div class="input-group marg row">
       <span class="input-group-addon col-md-6 cajas">Precio:</span>
       <span class="input-group-addon ">$</span>
-      <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_2" 
+      <input type="number" onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_2" 
       name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required" placeholder="$" >
      
     </div>
@@ -452,7 +466,7 @@ $("button.remove").on("click", remove);
     <div class="input-group marg ">
       <span class="input-group-addon  cajas" id="sumatoria">Sumatoria:</span>
       <span class="input-group-addon ">$</span>
-      <input type="number" class="form-control cajas" id="cajas_ingreso_2" 
+      <input type="number" onkeyup="format(this)" onchange="format(this)" class="form-control cajas" id="cajas_ingreso_2" 
       name="test" length="15" onKeyPress="return(currencyFormat(this,',','.',event))" id="dinero" required="required"placeholder="$" >
       
     </div> 
