@@ -223,5 +223,8 @@ margin-left: none;
 }
 
 
-
+.agrequitt{
+	z-index: :100!important;
+	position: absolute;
+}
 

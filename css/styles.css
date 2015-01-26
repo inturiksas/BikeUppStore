@@ -126,7 +126,16 @@ text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 .recibo_unoderecha{
 	padding-top: 50px;
 }
-
+#AddMoreFileBox{
+z-index: 1000!important;
+background-image: url("../img/mas.png");
+position: absolute;
+}
+.removeclass{
+z-index: 1000!important;
+background-image: url("../img/mas.png");
+position: absolute;
+}
 @media screen and (max-width: 720px) {
     .cajas {
         width: 213px!important
@@ -145,6 +154,8 @@ margin-left: none;
         width: 0 auto!important
     }
        }
+
+
 
 
 @media screen and (max-width: 720px) {
