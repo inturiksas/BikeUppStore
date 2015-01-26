@@ -94,7 +94,8 @@ left: 0px;
 top: 0px;
 width: 59px;
 height: 100%;
-z-index: 1000;
+z-index: 1000!important;
+margin-left: 20%;
 }
 .scrollfondo{
 	margin-bottom: 20px;
