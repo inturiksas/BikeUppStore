@@ -130,17 +130,17 @@ text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 z-index: 1000!important;
 background-image: url("../img/mas.png");
 position: absolute;
-width: 39px;
-height: 39px;
-border-radius: 50px;
+width: 39px!important;
+height: 39px!important;
+border-radius: 50px!important;
 }
 .removeclass{
 z-index: 1000!important;
 background-image: url("../img/menos.png");
 position: absolute;
-width: 39px;
-height: 39px;
-border-radius: 50px;
+width: 39px!important;
+height: 39px!important;
+border-radius: 50px!important;
 }
 @media screen and (max-width: 720px) {
     .cajas {
