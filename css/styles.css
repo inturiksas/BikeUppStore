@@ -157,6 +157,10 @@ position: absolute;
 width: 39px!important;
 height: 39px!important;
 border-radius: 50px!important;
+left: -16px;
+}
+.marmar{
+	margin-bottom: 20px;
 }
 .removeclass{
 z-index: 1000!important;
@@ -165,6 +169,8 @@ position: absolute;
 width: 39px!important;
 height: 39px!important;
 border-radius: 50px!important;
+left: -32px;
+bottom: 18px;
 }
 @media screen and (max-width: 720px) {
     .cajas {
@@ -311,6 +317,9 @@ background: url('../img/back1.jpg') 50% 0 no-repeat fixed!important;
 	-o-background-size: cover;
 	background-size: cover;
 
+}
+#InputsWrapper {
+margin-top: 50px;
 }
 #fondolistado {
 	background: url('../img/back1.jpg') 50% 0 no-repeat fixed!important;
