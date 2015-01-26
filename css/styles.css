@@ -137,8 +137,16 @@ margin-bottom: none;
 margin-left: none;
 
 
+
 }
 }
+@media screen and (max-width: 720px) {
+    .cajas {
+        width: 0 auto!important
+    }
+       }
+
+
 @media screen and (max-width: 720px) {
     .desapa1 {display: none!important;
     }
