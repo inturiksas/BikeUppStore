@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#BikeUppStore</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+  
+    <script  type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    
+   
+
+  <script>
+      $(document).ready(function(){
+          $('section[data-type="parallax_section"]').each(function(){
+              var $bgobj = $(this); // Variable para asignacion de objeto
+              $(window).scroll(function() {
+                $window = $(window);
+                  var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+                  // cordinadas del background
+                  var coords = '50% '+ yPos + 'px';
+                  // moviendo el background
+                  $bgobj.css({ backgroundPosition: coords });
+              });
+          });
+      });
+
+    </script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+   
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+     <script src="js/ingreso.js"></script>
+      <link href="css/animate.css" rel="stylesheet">
+       <script src="js/scrolling.js" type="text/javascript"></script>
+  </head>
+  <body >
+     
+    <div  class="row fondo">
+
+   <form class="navbar-form todo "  id="fondo2" role="search">
+   
+  
+ <nav class="navbar navbar-inverse menmen" >
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand " href="Splash.html">#BikeUppStore</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+          <ul class="nav navbar-nav">
+            <li><a href="Listado.html">Mis Clientes</a></li>
+            <li class="active"><a href="Formulariomante.html">Registrar un mantenimiento</a></li>            
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+<div class="recibo_uno row ">
+  <div class="col-md-6 text-center recibo_unoizquierda">
+    <div class=" row">
+      <p class="col-md-8 fuentetit">Número de Mantenimiento:</p>
+      <p class="col-md-4 fuentetit" id="Numero_serial">1900</p>
+    </div>
+    <div class="col-md-12">
+        <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas ">Fecha de ingreso:</span>
+       <input type="date" class="form-control col-md-6 cajas " id="cajas_ingreso_1"  name="date" min="2014-03-30" max="2018-03-30" value="2014-10-23" step="1" required>
+    </div>
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Fecha de salida:</span>
+       <input type="date" class="form-control col-md-6 cajas " id="cajas_ingreso_1"  name="date" min="2014-03-30" max="2018-03-30" value="2014-10-23" step="1" required>
+    </div>
+
+    </div>  
+    
+  </div>
+ <div class="col-md-6 text-center recibo_unoderecha">
+  <div class="row">     <div class="col-md-3"></div>
+      <p class="col-md-2 fuentetit" id="Numero_serial">Estado:<p id="Estado"></p></p>
+    </div>
+ <div class="col-md-12">
+  <div class="input-group  marg row">
+      <span class="input-group-addon col-md-6 cajas" >Recibido por:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_3" placeholder="" required>
+    </div>
+     <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas" >valor MO:</span>
+      <input  onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_4"  name="test" length="15" placeholder="$" required>
+    </div>
+
+ </div>
+ </div>
+ </div>
+
+ <div class="recibo_dos row">
+  <div class="cabezainfo text-center row">
+    <p class="col-md-12 fuentetit">Información:</p>
+  </div>
+      <!-- <div class="col-md-6  recibo_unoizquierda">
+   
+    <div class="col-md-12">
+        <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas ">Documento:</span>
+       <input type="text" class="form-control col-md-6 cajas " id="cajas_ingreso_1" placeholder="Doc identidad" required>
+    </div>
+    <div class="input-group marg row">
+     <button type="button" class="btn btn-primary desapa  col-md-12 col-xs-12 col-sm-12" data-toggle="modal" data-target="#modalverificacion" >
+  Consultar
+</button>
+</div>
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Nombre:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre completo" required>
+    </div>
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Peso :</span>
+      <input  onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_2"  name="test" length="3" placeholder="Kg" required>
+    </div>
+   
+
+    </div>  
+    
+  </div>
+ <div class="col-md-6 recibo_unoderecha">
+  <div class=" row">
+      <div class="col-md-5"></div>
+      <p class="col-md-7" id="Numero_serial">
+       
+
+
+ Button trigger modal
+
+
+<!-- Modal 
+<div class="modal fade" id="modalverificacion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">El usuario no existe</h4>
+      </div>
+      <div class="modal-body">
+        Puedes agregar un usuario nuevo
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" id="consultar_confirm">Crear usuario</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+     </p>
+    </div>
+
+
+ </div>-->
+
+  <div class="col-md-12">
+    <div class="input-group   row">
+      <div class="col-md-6 recibo_unoderecha"> 
+        <div class="input-group marg row">
+      <span class="input-group-addon col-md-4 cajanombre" >Documento:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Documento" required>
+    <button type="button" class="btn btn-primary  col-md-3  bot  " data-toggle="modal" data-target="#modalverificacion:" >
+  Consultar
+</button>
+      </div>
+      <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas" >Nombre:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Nombre" required>
+    </div>
+     </div>
+<div class="col-md-6 recibo_unoderecha"> 
+      <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Peso:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Kg" required>
+    </div>
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">E-mail:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="E-mail" required>
+    </div>
+    </div>
+      </div>   
+ 
+      
+    </div>
+  <div class="col-md-12">
+    <div class="input-group   row">
+      <div class="col-md-6 "> 
+        <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas" >Color:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Color" required>
+    
+      </div>
+      <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas" >Marca:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Marca" required>
+    </div>
+     </div>
+<div class="col-md-6 "> 
+      <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Articulo:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre" required>
+    </div>
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Referencia:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Ref" required>
+    </div>
+    </div>
+      </div>   
+ 
+      
+    </div>
+
+
+   
+    
+      
+    </div>
+
+    <div class="recibo_tres row">
+  <div class="cabezainfo text-center row">
+    <p class="col-md-12 fuentetit">Mantenimiento:</p>
+  </div>
+       <div class="col-md-6 text-center recibo_unoizquierda">
+        <h1>General:</h1>
+    
+    <div class="col-md-12">
+        <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas ">Preventivo:</span>
+      <span class="input-group-addon ">$</span>
+       <input  onkeyup="format(this)" onchange="format(this)"  class="form-control col-md-6 cajas " name="test" length="15" id="dinero" placeholder="$" required="required" >
+       
+
+    </div>
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">General:</span>
+      <span class="input-group-addon ">$</span>
+      <input type="text" onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas"  name="test" length="15" id="cajas_ingreso_2" placeholder="$" >
+      
+    </div>
+    
+    
+
+
+    </div>  
+    
+  </div>
+
+ <div class="col-md-6 text-center recibo_unoizquierda">
+
+  <h1>Suspensión delantera:</h1>
+    
+    <div class="col-md-12">
+        <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas ">General:</span>
+      <span class="input-group-addon ">$</span>
+       <input  onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas " id="cajas_ingreso_1" name="test" length="15" id="dinero" required="required"placeholder="$" >
+      
+    </div>
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Puesta a punto:</span>
+      <span class="input-group-addon ">$</span>
+      <input  onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_2" name="test" length="15" id="dinero" required="required" placeholder="$" >
+      
+    </div>
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Correctivo:</span>
+      <span class="input-group-addon ">$</span>
+      <input  onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_2" name="test" length="15" id="dinero" required="required" placeholder="$" >
+   
+    </div>
+    
+
+    </div>  
+
+    
+  </div>
+   <div class="col-md-6 text-center recibo_unoizquierda">
+  <h1>Suspensión trasera:</h1>
+    
+    <div class="col-md-12">
+        <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas ">General:</span>
+      <span class="input-group-addon ">$</span>
+       <input  onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas " id="cajas_ingreso_1" 
+       name="test" length="15" id="dinero" required="required"placeholder="$" >
+      
+    </div>
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Puesta a punto:</span>
+      <span class="input-group-addon ">$</span>
+      <input  onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_2" 
+      name="test" length="15" id="dinero" required="required" placeholder="$" >
+      
+    </div>
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Correctivo:</span>
+      <span class="input-group-addon ">$</span>
+      <input  onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_2" 
+      name="test" length="15" id="dinero" required="required" placeholder="$" >
+     
+    </div>
+    
+
+    </div>  
+    
+  </div>
+   <div class="col-md-6 text-center recibo_unoizquierda">
+  <h1>Bujes:</h1>
+  <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Precio:</span>
+      <span class="input-group-addon ">$</span>
+      <input  onkeyup="format(this)" onchange="format(this)" class="form-control col-md-6 cajas" id="cajas_ingreso_2" 
+      name="test" length="15" id="dinero" required="required" placeholder="$" >
+     
+    </div>
+    </div>  
+    
+  </div>
+
+
+<div class="recibo_cuatro row">
+  <div class="cabezainfo text-center row">
+    <p class="col-md-12 fuentetit">Cambio de partes:</p>
+   
+   
+  </div>
+
+
+
+
+ 
+  <div class="col-xs-12 col-md-12" id="InputsWrapper">
+                       <input type="button" id="AddMoreFileBox" class"agrequitt" src="img/mas.png" /> 
+                       '<div class="col-md-12">
+            <div class="input-group  row">
+            <span class="input-group-addon col-md-4 cajas ">Codigo:</span><input type="text" class="form-control col-md-6 cajas" name="field_cod_'+ FieldCount +'" id="field_cod_'+ FieldCount +'" placeholder="Código pieza"/>
+           </div>
+           <iv class="input-group  row">
+            <span class="input-group-addon col-md-4 cajas">Parte:</span><input type="text" class="form-control col-md-6 cajas" name="field_nom_'+ FieldCount +'" id="field_nom_'+ FieldCount +'" placeholder="Nombre pieza"/>
+            </div>
+            <div class="input-group  row">
+            <span class="input-group-addon col-md-4 cajas">Precio:</span><input type="text" class="form-control col-md-6 cajas" name="field_pre_'+ FieldCount +'" id="field_pre_'+ FieldCount +'" placeholder="Precio pieza"/>
+            </div>
+            <button class="removeclass">-</button>
+            
+             <input type="image" class="removeclass agrequitt" src="img/menos.png" />+
+             </div>
+
+
+            </div> 
+
+           <!-- <div class"padre">
+            <div  id="clonedInpu" class="col-md-12 hijo">
+            <div class="input-group  row" id="nuevo">
+            <span class="input-group-addon col-md-4 cajas ">Codigo:</span><input type="text" class="form-control col-md-6 cajas" name="field_cod_" id="field_cod_'+ FieldCount +'" placeholder="Código pieza"/>
+           </div>
+           <div class="input-group  row">
+            <span class="input-group-addon col-md-4 cajas">Parte:</span><input type="text" class="form-control col-md-6 cajas" name="field_nom_'" id="field_nom_'+ FieldCount +'" placeholder="Nombre pieza"/>
+            </div>
+            <div class="input-group  row">
+            <span class="input-group-addon col-md-4 cajas">Precio:</span><input type="text" class="form-control col-md-6 cajas" name="field_pre_" id="field_pre_" placeholder="Precio pieza"/>
+            </div>
+               <button class="clone  "  type="button" id="clone" onclick="clonee()">agregar</button> 
+       <button class="remove "  type="button" id="remove">quitar</button> 
+            
+             
+             </div>
+              </div>-->
+           
+       <div class="col-md-6 text-center recibo_unoizquierda">
+       
+    
+    <div class="col-md-12">
+        
+    
+
+         
+     <div class="marg1 row ">
+      <div class="col-md-12">
+     <button class="btn btn-default col-md-12 text-center btn-primary" type="button" id="cotizar">Enviar Cotización</button> 
+      </div>
+         
+     </div> 
+
+    </div>  
+    
+  </div>
+
+ 
+   
+   <div class="col-md-6 text-center recibo_unoizquierda">
+      <div class=" marg1 row"> 
+              
+      <span class=" col-md-3 ">Autorizado:</span>     
+     <input type="checkbox" class="col-md-1">
+  
+    </div> 
+   
+    <div class="input-group marg ">
+      <span class="input-group-addon  cajas" id="sumatoria">Total Partes:</span>
+      <span class="input-group-addon ">$</span>
+      <input  onkeyup="format(this)" onchange="format(this)" class="form-control cajas" id="cajas_ingreso_2" 
+      name="test" length="15" id="dinero" required="required"placeholder="$" >
+      
+    </div> 
+   
+    
+
+     
+
+    </div>  
+    
+  </div>
+
+
+
+
+
+    <div class="recibo_cinco row">
+  <div class="cabezainfo text-center row">
+    <p class="col-md-12 fuentetit">Valor Total:</p>
+  </div>
+       <div class="col-md-6 text-center col-md-offset-3 recibo_unoizquierda">
+        <button class="btn btn-default col-md-12" type="button" id="Cerrarr">Cerrar</button> 
+    
+    <div class="col-md-12">
+        <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas ">Total mano de obra:</span>
+       <input type="text" class="form-control col-md-6 cajas " id="cajas_ingreso_1" placeholder="$" >
+       
+    </div>
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Total partes de cambio:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="$" >
+     
+    </div> 
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Total mantenimiento:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="$" >
+     
+    </div> 
+    <div class="input-group marg row">
+      <span class="input-group-addon col-md-6 cajas">Total:</span>
+      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="$" >
+     
+    </div>   
+     <div class="marg row">
+      <div class="col-md-12">
+     <button class="btn btn-default col-md-6 btn-success" type="button" id="Guardar">Guardar</button> 
+      <button class="btn btn-default col-md-6 btn-danger" type="button" id="Cancelar">Volver</button> 
+      </div>
+         
+     </div> 
+
+    </div>  
+    
+  </div>
+
+ 
+   
+ 
+    
+  </div>
+
+
+
+ </div>
+
+
+
+   
+  </div>
+ 
+</form>
+</div>
+    
+  </body>
+  <script type="text/javascript">
+
+function format(input)
+{
+var num = input.value.replace(/\./g,'');
+if(!isNaN(num)){
+num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g,'$1.');
+num = num.split('').reverse().join('').replace(/^[\.]/,'');
+input.value = num;
+}
+ 
+else{ alert('Solo se permiten numeros');
+input.value = input.value.replace(/[^\d\.]*/g,'');
+}
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+ 
+</html>

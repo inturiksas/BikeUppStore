@@ -76,6 +76,10 @@ background-position-y: 12%;
 
 }
 
+.colapsoo{
+	padding-left: 0px!important;
+}
+
 .fondo{
 
 	background-image: url('../img/back2.png');
@@ -83,6 +87,14 @@ background-position-y: 12%;
     background-attachment: fixed;
     background-size: 100%;
   
+}
+.menulateral{
+	position: fixed;
+left: 0px;
+top: 0px;
+width: 59px;
+height: 100%;
+z-index: 1000;
 }
 .scrollfondo{
 	margin-bottom: 20px;
@@ -94,8 +106,7 @@ text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 .recibo_uno{
 	background: rgba(253, 253, 253, 0.5);
 	box-shadow: 0px 8px 27px 6px;
-	padding-bottom: 50px;
-	
+		
 
 }
 .recibo_dos{
