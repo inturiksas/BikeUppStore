@@ -155,7 +155,8 @@ border-radius: 50px!important;
 }
 @media screen and (max-width: 720px) {
     .cajas {
-        width: 213px;
+         min-width: 130px!important;
+width: 155px!importanty;
     }
        .marg1{
 	margin-top: none;
@@ -163,7 +164,8 @@ margin-bottom: none;
 margin-left: none;
 }
 .cajas{
-width: auto!important;
+min-width: 130px!important;
+width: 155px;
 	height: 32px;
 
 }
@@ -171,7 +173,8 @@ width: auto!important;
 }
 @media screen and (max-width: 500px) {
     .cajas {
-        min-width: 150px!important
+        min-width: 130px!important;
+width: 155px!importanty;
     }
        }
 
