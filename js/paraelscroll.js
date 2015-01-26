@@ -25,8 +25,8 @@
  *	- jQuery.localScroll can be used if the desired links, are all over the document, it accepts the same settings.
  *  - If the setting 'lazy' is set to true, then the binding will still work for later added anchors.
   *	- If onBefore returns false, the event is ignored.
- **/
-;(function( $ ){
+  **/
+  ;(function( $ ){
 	var URI = location.href.replace(/#.*/,''); // local url without hash
 
 	var $localScroll = $.localScroll = function( settings ){
@@ -81,9 +81,9 @@
 			}) :
 			// bind concretely, to each matching link
 			this.find('a,area')
-				.filter( filter ).bind( settings.event, function(e){
-					scroll( e, this, settings );
-				}).end()
+			.filter( filter ).bind( settings.event, function(e){
+				scroll( e, this, settings );
+			}).end()
 			.end();
 
 		function filter(){// is this a link that points to an anchor and passes a possible filter ? href is checked to avoid a bug in FF.
@@ -93,7 +93,7 @@
 
 	function scroll( e, link, settings ){
 		var id = link.hash.slice(1),
-			elem = document.getElementById(id) || document.getElementsByName(id)[0];
+		elem = document.getElementById(id) || document.getElementsByName(id)[0];
 
 		if ( !elem )
 			return;
@@ -112,11 +112,11 @@
 
 		if( settings.hash ){
 			var attr = elem.id == id ? 'id' : 'name',
-				$a = $('<a> </a>').attr(attr, id).css({
-					position:'absolute',
-					top: $(window).scrollTop(),
-					left: $(window).scrollLeft()
-				});
+			$a = $('<a> </a>').attr(attr, id).css({
+				position:'absolute',
+				top: $(window).scrollTop(),
+				left: $(window).scrollLeft()
+			});
 
 			elem[attr] = '';
 			$('body').prepend($a);
@@ -124,10 +124,10 @@
 			$a.remove();
 			elem[attr] = id;
 		}
-			
+		
 		$target
 			.scrollTo( elem, settings ) // do scroll
 			.trigger('notify.serialScroll',[elem]); // notify serialScroll about this change
-	};
+		};
 
-})( jQuery );
+	})( jQuery );

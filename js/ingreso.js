@@ -38,14 +38,14 @@ $(document).ready(function(){
     precioPieza = Request.Params["precio"];
 
     if(idPieza !== undefined && codigoPieza !== undefined && nombrePieza !== undefined && precioPieza !== undefined ) {
-		$('#txtCodigoPieza').val(codigoPieza);
-    	$('#txtNombrePieza').val(nombrePieza);
-        $('#txtPrecioPieza').val(precioPieza);
-        $('#txtCodigoPieza').attr('disabled', 'disabled');
-        $('.title h3').html('ADICIONAR MAS');
-    }
+      $('#txtCodigoPieza').val(codigoPieza);
+      $('#txtNombrePieza').val(nombrePieza);
+      $('#txtPrecioPieza').val(precioPieza);
+      $('#txtCodigoPieza').attr('disabled', 'disabled');
+      $('.title h3').html('ADICIONAR MAS');
+  }
 
-    adicionar();
+  adicionar();
 
     //on add input button click
     $(AddButton).click(function (e) {
@@ -67,7 +67,7 @@ $(document).ready(function(){
             x--; //decrement textbox
             
         }
-       
+        
         return false;
     });
 
@@ -79,25 +79,25 @@ $(document).ready(function(){
             //'<button class="removeclass">-</button>'+
             '<input type="image" class="removeclass" src="../img/menos.png">'+
             '</div>'
-        );*/
-        $(InputsWrapper).append(
-              '<div class="col-md-12">'+
-            '<div class="input-group marmar row">'+
-            '<span class="input-group-addon col-md-4 cajas ">Codigo:</span>'+'<input type="text" class="form-control col-md-6 cajas" name="field_cod_'+ FieldCount +'" id="field_cod_'+ FieldCount +'" placeholder="Código pieza"/>'+
-           '</div>'+
-           '<div class="input-group  marmar row">'+
-            '<span class="input-group-addon col-md-4 cajas">Parte:</span>'+'<input type="text" class="form-control col-md-6 cajas" name="field_nom_'+ FieldCount +'" id="field_nom_'+ FieldCount +'" placeholder="Nombre pieza"/>'+
-            '</div>'+
-            '<div class="input-group  marmar row">'+
-            '<span class="input-group-addon col-md-4 cajas">Precio:</span>'+'<input type="text" class="form-control col-md-6 cajas" name="field_pre_'+ FieldCount +'" id="field_pre_'+ FieldCount +'" placeholder="Precio pieza"/>'+
-            '</div>'+
+            );*/
+$(InputsWrapper).append(
+  '<div class="col-md-12">'+
+  '<div class="input-group marmar row">'+
+  '<span class="input-group-addon col-md-4 cajas ">Codigo:</span>'+'<input type="text" class="form-control col-md-6 cajas" name="field_cod_'+ FieldCount +'" id="field_cod_'+ FieldCount +'" placeholder="Código pieza"/>'+
+  '</div>'+
+  '<div class="input-group  marmar row">'+
+  '<span class="input-group-addon col-md-4 cajas">Parte:</span>'+'<input type="text" class="form-control col-md-6 cajas" name="field_nom_'+ FieldCount +'" id="field_nom_'+ FieldCount +'" placeholder="Nombre pieza"/>'+
+  '</div>'+
+  '<div class="input-group  marmar row">'+
+  '<span class="input-group-addon col-md-4 cajas">Precio:</span>'+'<input type="text" class="form-control col-md-6 cajas" name="field_pre_'+ FieldCount +'" id="field_pre_'+ FieldCount +'" placeholder="Precio pieza"/>'+
+  '</div>'+
             //'<button class="removeclass">-</button>'+
             
-             '<input type="button" class="removeclass agrequitt" src="" />'+
-             '</div>'
-                     );
-    }
+            '<input type="button" class="removeclass agrequitt" src="" />'+
+            '</div>'
+            );
+}
 
-    /* Para la gestión de Adición y retiro de Partes */
+/* Para la gestión de Adición y retiro de Partes */
 
 });

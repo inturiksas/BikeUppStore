@@ -1,214 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>#BikeUppStore</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
-   
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>#BikeUppStore</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+  
 
 
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-     <link href="css/styles.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+      <![endif]-->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
       <link href="css/animate.css" rel="stylesheet">
-  </head>
-  <body>
-    <div id="" class="row">
-    </div>
-    <div  class="row " id="fondolistado">
-   <form class="navbar-form todo "  id="fondo2" role="search">
- 
-  
- 
+    </head>
+    <body>
+      <div id="" class="row">
+      </div>
+      <div  class="row " id="fondolistado">
+       <form class="navbar-form todo "  id="fondo2" role="search">
+         
+        
+         
 
-<nav class="navbar navbar-inverse menmen" >
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand " href="Splash.html">#BikeUppStore</a>
+        <nav class="navbar navbar-inverse menmen" >
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand " href="Splash.html">#BikeUppStore</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="Listado.html">Mis Clientes</a></li>
+                <li><a href="Formulariomante.html">Registrar un mantenimiento</a></li>            
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="recibo_dos row">
+          <div class="cabezainfo text-center row">
+            <p class="col-md-12 fuentetit">Mis Clientes:</p>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger col-md-12 " data-toggle="modal" data-target="#modalRegis" >
+              Registrar cliente
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalRegis" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog dialogomodal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Registro</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-body">
+                      
+
+                     <div class="recibo_dos row">
+                      
+                       <div class="col-md-6 recibo_unoizquierda">
+                        
+                        <div class="col-md-12 ">
+                          <div class="input-group marg row">
+                            <span class="input-group-addon col-md-6 cajas ">Documento:</span>
+                            <input type="text" class="form-control col-md-6 cajas " id="cajas_ingreso_1" placeholder="Doc identidad" required>
+                          </div>
+                          <div class="input-group marg row">
+                            <span class="input-group-addon col-md-6 cajas">Nombre:</span>
+                            <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre completo" required>
+                          </div>
+                          <div class="input-group marg row">
+                            <span class="input-group-addon col-md-6 cajas">Peso :</span>
+                            <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_2"  name="test" length="3" onKeyPress="return(currencyFormat(this,',','.',event))" placeholder="Kg" required>
+                          </div>
+                          
+                        </div>  
+                        
+                      </div>
+                      <div class="col-md-6 recibo_unoderecha">
+                        <div class=" row">
+                          <div class="col-md-5"></div>
+                          
+                        </div>
+                        <div class="col-md-12">
+                          <div class="input-group  marg row">
+                            <span class="input-group-addon col-md-6 cajas" >Direccion:</span>
+                            <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_3" placeholder="Dir" required>
+                          </div>
+                          <div class="input-group marg row">
+                            <span class="input-group-addon col-md-6 cajas" >Telefono:</span>
+                            <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Fijo o celular" required>
+                          </div>
+                          <div class="input-group marg row">
+                            <span class="input-group-addon col-md-6 cajas" >E-mail:</span>
+                            <input type="email" name="email" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="user@" required>
+                          </div>
+                          
+
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary" id="consultar_confirm">Crear usuario</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
+        <div class="col-md-6 recibo_unoizquierda">
+          
+          <div class="col-md-12 col-md-12 col-xs-7 col-xs-offset-2">
+            <div class="input-group marg row">
+              <span class="input-group-addon col-md-6 cajas ">Documento:</span>
+              <input type="text" class="form-control col-md-6 cajas " id="cajas_ingreso_1" placeholder="Doc identidad" required>
+            </div>
+            <div class="input-group marg row">
+              <span class="input-group-addon col-md-6 cajas">Nombre:</span>
+              <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre completo" required>
+            </div>
+            <div class="input-group marg row">
+              <span class="input-group-addon col-md-6 cajas">Peso :</span>
+              <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_2"  name="test" length="3" onKeyPress="return(currencyFormat(this,',','.',event))" placeholder="Kg" required>
+            </div>
+            
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="Listado.html">Mis Clientes</a></li>
-            <li><a href="Formulariomante.html">Registrar un mantenimiento</a></li>            
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+          </div>  
+          
+        </div>
+        <div class="col-md-6 recibo_unoderecha">
+          <div class=" row">
+            <div class="col-md-5"></div>
+            
+          </div>
+          <div class="col-md-12 col-md-12 col-xs-7 col-xs-offset-2">
+            <div class="input-group  marg row">
+              <span class="input-group-addon col-md-6 cajas" >Direccion:</span>
+              <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_3" placeholder="Dir" required>
+            </div>
+            <div class="input-group marg row">
+              <span class="input-group-addon col-md-6 cajas" >Telefono:</span>
+              <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Fijo o celular" required>
+            </div>
+            <div class="input-group marg row">
+              <span class="input-group-addon col-md-6 cajas" >E-mail:</span>
+              <input type="email" name="email" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="user@" required>
+            </div>
 
- <div class="recibo_dos row">
-  <div class="cabezainfo text-center row">
-    <p class="col-md-12 fuentetit">Mis Clientes:</p>
 
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-danger col-md-12 " data-toggle="modal" data-target="#modalRegis" >
-  Registrar cliente
-</button>
+          </div>
 
-<!-- Modal -->
-<div class="modal fade" id="modalRegis" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog dialogomodal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Registro</h4>
+        </div>
+        
       </div>
-      <div class="modal-body">
-      <div class="modal-body">
-      
 
- <div class="recibo_dos row">
-  
-       <div class="col-md-6 recibo_unoizquierda">
-    
-    <div class="col-md-12 ">
-        <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas ">Documento:</span>
-       <input type="text" class="form-control col-md-6 cajas " id="cajas_ingreso_1" placeholder="Doc identidad" required>
-    </div>
-    <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas">Nombre:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre completo" required>
-    </div>
-    <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas">Peso :</span>
-      <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_2"  name="test" length="3" onKeyPress="return(currencyFormat(this,',','.',event))" placeholder="Kg" required>
-    </div>
-    
-    </div>  
-    
-  </div>
- <div class="col-md-6 recibo_unoderecha">
-  <div class=" row">
-      <div class="col-md-5"></div>
-    
-    </div>
- <div class="col-md-12">
-  <div class="input-group  marg row">
-      <span class="input-group-addon col-md-6 cajas" >Direccion:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_3" placeholder="Dir" required>
-    </div>
-     <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas" >Telefono:</span>
-      <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Fijo o celular" required>
-    </div>
-    <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas" >E-mail:</span>
-      <input type="email" name="email" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="user@" required>
-    </div>
-   
 
- </div>
- 
- </div>
+
+
+
+
+
+
+
+
+
       
     </div>
-  
-      </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary" id="consultar_confirm">Crear usuario</button>
-      </div>
-    </div>
-  </div>
+
+
+
+
+
+
+
+    
+    
+    
+  </form>
 </div>
 
 
-  </div>
-       <div class="col-md-6 recibo_unoizquierda">
-    
-    <div class="col-md-12 col-md-12 col-xs-7 col-xs-offset-2">
-        <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas ">Documento:</span>
-       <input type="text" class="form-control col-md-6 cajas " id="cajas_ingreso_1" placeholder="Doc identidad" required>
-    </div>
-    <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas">Nombre:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_2" placeholder="Nombre completo" required>
-    </div>
-    <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas">Peso :</span>
-      <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_2"  name="test" length="3" onKeyPress="return(currencyFormat(this,',','.',event))" placeholder="Kg" required>
-    </div>
-   
-
-    </div>  
-    
-  </div>
- <div class="col-md-6 recibo_unoderecha">
-  <div class=" row">
-      <div class="col-md-5"></div>
-    
-    </div>
- <div class="col-md-12 col-md-12 col-xs-7 col-xs-offset-2">
-  <div class="input-group  marg row">
-      <span class="input-group-addon col-md-6 cajas" >Direccion:</span>
-      <input type="text" class="form-control col-md-6 cajas" id="cajas_ingreso_3" placeholder="Dir" required>
-    </div>
-     <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas" >Telefono:</span>
-      <input type="number" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="Fijo o celular" required>
-    </div>
-    <div class="input-group marg row">
-      <span class="input-group-addon col-md-6 cajas" >E-mail:</span>
-      <input type="email" name="email" class="form-control col-md-6 cajas" id="cajas_ingreso_4" placeholder="user@" required>
-    </div>
-
-
- </div>
-
- </div>
-      
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-      
-    </div>
-
-
-
-
-
-
-
-   
-  
- 
-</form>
-</div>
-
-    
-  </body>
+</body>
 </html>
