@@ -5,6 +5,7 @@ body{
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+    background: #222;
 
 }
 .row{
@@ -94,8 +95,8 @@ left: 0px;
 top: 0px;
 width: 59px;
 height: 100%;
-z-index: 1000!important;
-margin-left: 20%;
+z-index: 1000;
+
 }
 .scrollfondo{
 	margin-bottom: 20px;
@@ -258,8 +259,47 @@ h2{
 
 }
 #section3{
-	background: url('../img/back1.jpg') 50% 0 no-repeat fixed!important;
+background: url('../img/back1.jpg') 50% 0 no-repeat fixed!important;
 	min-height: 700px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+#section4{
+		background: url('../img/back1magn.jpg') 50% 0 no-repeat fixed!important;
+	min-height: 700px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+#section5{
+		background: url('../img/back1azul.jpg') 50% 0 no-repeat fixed!important;
+	min-height: 700px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+#fondosplash {
+	background: url('../img/back.jpg') 50% 0 no-repeat fixed!important;
+	min-height: 667px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1920px;
@@ -272,6 +312,23 @@ h2{
 	background-size: cover;
 
 }
+#fondolistado {
+	background: url('../img/back1.jpg') 50% 0 no-repeat fixed!important;
+	min-height: 667px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+
 article{
 	
 }
