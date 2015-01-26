@@ -155,10 +155,12 @@ h1{
 z-index: 1000!important;
 background-image: url("../img/mas.png");
 position: absolute;
-width: 39px!important;
-height: 39px!important;
+width: 30px!important;
+height: 30px!important;
 border-radius: 50px!important;
 left: -16px;
+border: none;
+background-size: 106%!important;
 }
 .marmar{
 	margin-bottom: 20px;
@@ -167,11 +169,14 @@ left: -16px;
 z-index: 1000!important;
 background-image: url("../img/menos.png");
 position: absolute;
-width: 39px!important;
-height: 39px!important;
+width: 30px!important;
+height: 30px!important;
 border-radius: 50px!important;
 left: -32px;
 bottom: 18px;
+border: none;
+background-size: 97%!important;
+background-position-y: -2px;
 }
 @media screen and (max-width: 720px) {
     .cajas {
@@ -250,6 +255,7 @@ h2{
 	-o-background-size: cover;
 	background-size: cover;
 }
+
 #seccion2 {
 	background: url('../img/back.jpg') 50% 0 no-repeat fixed!important;
 	min-height: 700px;
@@ -343,7 +349,7 @@ article{
 	
 }
 .geekhome{
-	
+	z-index: 10;
 	display: block;
 	margin: 0px auto;
 	background: rgba(253, 253, 253, 0.5);
