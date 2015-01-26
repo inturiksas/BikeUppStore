@@ -93,7 +93,8 @@ $(document).ready(function(){
             '</div>'+
             //'<button class="removeclass">-</button>'+
             
-                          '</div>'
+             '<input type="image" class="removeclass " src="img/menos.png">'+
+             '</div>'
                      );
     }
 
